@@ -1,73 +1,65 @@
-# React + TypeScript + Vite
+🛒 PRO-CATALOG: E-Commerce Product Catalog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A super fast product catalog using React, Redux Toolkit, and Tailwind CSS. This showcases modern state management, API integration and a good user experience.
 
-Currently, two official plugins are available:
+- Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Global State Managment: Keeping things up-to-date with Redux Toolkit for easy one way data flow across the app.
 
-## React Compiler
+Live API Connection: * pulls live product data from the Fake Store API.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Dynamic Filtering: Filter products by category (Electronics, Jewelry, etc.) on the fly.
 
-## Expanding the ESLint configuration
+smart Sorting: Sort products by price, high and low, or price- -Product (Weight), can also be fuzzy matching sort.HasKey.assertIsNotBlank()ancellable.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Optimized Loading: Features a "Load More" pagination system to enhance performance and initial load speed.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Fully Responsive: A mobile-first design that scales from 1 column on phones to 4 columns on large desktops.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Loading States: Smooth UI feedback using animated Lucide-React spinners.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Tech Stack
+Frontend: React (Vite)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+State Management: Redux Toolkit (RTK)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Styling: Tailwind CSS
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Icons: Lucide-React
+
+Language: TypeScript
+
+- Installation & Setup
+Clone the repository:
+
+Bash
+git clone [your-repository-link]
+Install dependencies:
+
+Bash
+npm install
+Run the development server:
+
+Bash
+npm run dev
+Build for production:
+
+Bash
+npm run build
+🏗️ Project Structure
+Plaintext
+src/
+├── store/
+│   └── index.ts       # Unified Redux store & Product slice logic
+├── App.tsx            # Main UI Component & Logic
+├── main.tsx           # Entry point & Redux Provider setup
+└── index.css          # Tailwind directives
+
+💡 Implementation Details
+Redux Logic: The app uses createAsyncThunk to handle the asynchronous API call, managing idle, loading, and succeeded states to ensure the UI stays in sync with the data.
+
+TypeScript: Implements strict type checking for the Product interface and Redux hooks (AppDispatch and RootState) to prevent runtime errors.
+
+Deployment:- used netlify for deployment with the following link below
+
+https://resposive-ecommerce-web.netlify.app/
