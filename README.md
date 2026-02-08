@@ -66,8 +66,9 @@ src/
 ├── App.tsx            # Main UI Component & Logic
 ├── main.tsx           # Entry point & Redux Provider setup
 └── index.css          # Tailwind directives
+```
+## Deployment
 
-5.  ##**Deployment**;
 ```bash
     https://resposive-ecommerce-web.netlify.app/
 ```
