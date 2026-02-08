@@ -1,16 +1,14 @@
 🛒 PRO-CATALOG: E-Commerce Product Catalog
+A high-performance, responsive product catalog built with React, Redux Toolkit, and Tailwind CSS. This project demonstrates modern state management, API integration, and a clean user experience.
 
-A super fast product catalog using React, Redux Toolkit, and Tailwind CSS. This showcases modern state management, API integration and a good user experience.
+🚀 Features
+Global State Management: Powered by Redux Toolkit for seamless data flow across the application.
 
-- Features
+Real-time API Integration: Fetches live product data from the Fake Store API.
 
-Global State Managment: Keeping things up-to-date with Redux Toolkit for easy one way data flow across the app.
+Dynamic Filtering: Instantly filter products by category (Electronics, Jewelry, etc.).
 
-Live API Connection: * pulls live product data from the Fake Store API.
-
-Dynamic Filtering: Filter products by category (Electronics, Jewelry, etc.) on the fly.
-
-smart Sorting: Sort products by price, high and low, or price- -Product (Weight), can also be fuzzy matching sort.HasKey.assertIsNotBlank()ancellable.
+Smart Sorting: Sort products by price (Low to High / High to Low).
 
 Optimized Loading: Features a "Load More" pagination system to enhance performance and initial load speed.
 
@@ -18,7 +16,7 @@ Fully Responsive: A mobile-first design that scales from 1 column on phones to 4
 
 Loading States: Smooth UI feedback using animated Lucide-React spinners.
 
-- Tech Stack
+🛠️ Tech Stack
 Frontend: React (Vite)
 
 State Management: Redux Toolkit (RTK)
@@ -29,7 +27,7 @@ Icons: Lucide-React
 
 Language: TypeScript
 
-- Installation & Setup
+📦 Installation & Setup
 Clone the repository:
 
 Bash
@@ -54,12 +52,7 @@ src/
 ├── App.tsx            # Main UI Component & Logic
 ├── main.tsx           # Entry point & Redux Provider setup
 └── index.css          # Tailwind directives
-
 💡 Implementation Details
 Redux Logic: The app uses createAsyncThunk to handle the asynchronous API call, managing idle, loading, and succeeded states to ensure the UI stays in sync with the data.
 
 TypeScript: Implements strict type checking for the Product interface and Redux hooks (AppDispatch and RootState) to prevent runtime errors.
-
-Deployment:- used netlify for deployment with the following link below
-
-https://resposive-ecommerce-web.netlify.app/
