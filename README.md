@@ -28,27 +28,46 @@ A high-performance, responsive product catalog built with **React**, **Redux Too
 
 ## 📦 Installation & Setup
 
-1. **Clone the repository**:
-   ```bash
-   git clone [https://github.com/efan12114/Resposive-Ecommerce.git](https://github.com/efan12114/Resposive-Ecommerce.git)
+Follow these steps to run the project locally:
 
-Install dependencies:
+1.  **Clone the repository**:
+    ```bash
+    git clone [https://github.com/efan12114/Resposive-Ecommerce.git](https://github.com/efan12114/Resposive-Ecommerce.git)
+    ```
 
-Bash
-npm install
-Run the development server:
+2.  **Navigate into the directory**:
+    ```bash
+    cd Resposive-Ecommerce
+    ```
 
-Bash
-npm run dev
-Build for production:
+3.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
 
-Bash
-npm run build
-🏗️ Project Structure
-Plaintext
+4.  **Run the development server**:
+    ```bash
+    npm run dev
+    ```
+
+5.  **Build for production**:
+    ```bash
+    npm run build
+    ```
+
+---
+
+## 🏗️ Project Structure
+
+```text
 src/
 ├── store/
 │   └── index.ts       # Unified Redux store & Product slice logic
 ├── App.tsx            # Main UI Component & Logic
 ├── main.tsx           # Entry point & Redux Provider setup
 └── index.css          # Tailwind directives
+
+5.  **Deployment**:
+```bash
+    https://resposive-ecommerce-web.netlify.app/
+    ```
