@@ -31,3 +31,24 @@ A high-performance, responsive product catalog built with **React**, **Redux Too
 1. **Clone the repository**:
    ```bash
    git clone [https://github.com/efan12114/Resposive-Ecommerce.git](https://github.com/efan12114/Resposive-Ecommerce.git)
+
+Install dependencies:
+
+Bash
+npm install
+Run the development server:
+
+Bash
+npm run dev
+Build for production:
+
+Bash
+npm run build
+🏗️ Project Structure
+Plaintext
+src/
+├── store/
+│   └── index.ts       # Unified Redux store & Product slice logic
+├── App.tsx            # Main UI Component & Logic
+├── main.tsx           # Entry point & Redux Provider setup
+└── index.css          # Tailwind directives
